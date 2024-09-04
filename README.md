@@ -9,7 +9,7 @@ This repository contains scripts and configuration files for downloading, fine-t
    - `hf.yml`: Conda environment file for the model downloader
 
 2. **Fine-tuning with PEFT**
-   - `peft_lora_deepspeed.md`: Instructions for using PEFT (Parameter-Efficient Fine-Tuning) with LoRA and DeepSpeed
+   - `peft_lora_deepspeed.md`: Instructions for using the Hugging Face PEFT library with LoRA and DeepSpeed
    - `peft.yml`: Conda environment file for PEFT fine-tuning
 
 3. **Model Serving with VLLM**
