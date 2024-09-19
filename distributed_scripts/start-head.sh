@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Create necessary directories
-mkdir -p /work/$USER/inference/ray
-mkdir -p /work/$USER/.cache/vllm
-mkdir -p /work/$USER/qb4/inference
-mkdir -p /work/$USER/vllm/logs
-
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 export SHARED_DIR=/work/$USER/inference/ray
