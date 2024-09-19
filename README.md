@@ -1,4 +1,4 @@
-# Model Training and Inference Repository
+# LLM Tool/Scripts/Instructions for LSU and LONI HPC Clusters
 
 This repository contains scripts and configuration files for downloading, fine-tuning, and serving large language models using various tools and libraries.
 
