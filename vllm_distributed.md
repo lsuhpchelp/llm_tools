@@ -61,12 +61,8 @@ mkdir -p $SHARED_DIR $VLLM_CACHE_DIR $OUTLINES_CACHE_DIR
 
 > Note: See the downloader_instructions.md and hf_download.py files for download instructions and a convenience script.
 
-<<<<<<< HEAD
 Either download the model from Hugging Face, use the script mentioned above, or use one that you have trained yourself. Make sure it is in a directory that the GPU nodes can access. For example:
-=======
-Either download the model from Hugging Face, using the script, or use one that you have trained yourself. Make sure it is in a directory that the GPU nodes can access. For example:
 
->>>>>>> 7d0538a (add additional comments to scripts and update docs)
 ```bash
 export MODEL_LOCATION=/work/$USER/models/meta-llama/Meta-Llama-3.1-405B-Instruct
 ```
