@@ -87,7 +87,7 @@ The necessary scripts are provided in the LSU HPC GitHub repository. Follow thes
 3. Navigate to the distributed scripts directory:
 
    ```bash
-   cd vllm_dist
+   cd distributed_scripts
    ```
 
 4. Ensure you have the necessary permissions to execute these scripts:
@@ -135,11 +135,7 @@ sbatch submit.sh
 
 ### 9. Monitor the Job
 
-You can monitor the job using the `squeue` command:
-
-```bash
-squeue -u $USER
-```
+You can monitor the status of loading the model by reviewing the output and error logs shows in step 8.
 
 ### 10. Connect to the Model
 
