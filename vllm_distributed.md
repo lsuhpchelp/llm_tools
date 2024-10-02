@@ -166,7 +166,4 @@ for chunk in llm.stream("""Write a python function that recursively writes new p
 
 ## Additional Notes
 
-- The scripts provided in the GitHub repository are designed to work with the LSU HPC environment. If you're using a different HPC system, you may need to adjust the scripts accordingly.
-- Always refer to the latest documentation in the GitHub repository for any updates or changes to the process.
-- If you need to update the VLLM version, make sure to check for compatibility with your model and other dependencies.
 - The log files for your job will be located in `/work/$USER/vllm/logs/`. Make sure to check this directory for any output or error messages from your job.
