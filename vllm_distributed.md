@@ -1,6 +1,6 @@
 # How to Use VLLM on GPU Nodes
 
-This guide will walk you through the process of setting up and using VLLM across multiple GPU nodes using Ray. VLLM will distribute the model across multiple GPUs using tensor parallelism and/or pipeline parallelism. For a single node, tensor parallelism is more efficient.
+This guide will walk you through the process of setting up and using VLLM across multiple GPU nodes using Ray. VLLM will distribute the model across multiple GPUs using tensor parallelism and/or pipeline parallelism. For a single node, tensor parallelism is more efficient. 
 
 ## Steps
 
