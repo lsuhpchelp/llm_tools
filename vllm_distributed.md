@@ -100,8 +100,11 @@ The necessary scripts are provided in the LSU HPC GitHub repository. Follow thes
 Before submitting the job, you may need to modify the `submit.sh` script to match your specific requirements. Open the file in a text editor and check the following:
 
 - Ensure the `#SBATCH` directives match your resource needs (number of nodes, GPUs, time limit, etc.).
-
-  - To estimate GPU memory needs of a model, the easiest method is to multiply the number of parameters by the number of bits in each parameter.
+- In the `start-head.sh` file, on the line that starts VLLM, you can modify tensor and pipeline parallelism.
+  - Tensor parallelism flag: `--tp <##>`
+  - Pipeline parallesm flag: `--pp <##>`
+  - **The current script is configured with `--tp 16`, which uses full tensor parallelism across 16 GPUs. If you change it, pipeline parallelism should be the number of nodes, and tensor parallelism should be the number of GPUs per node.**
+- To estimate GPU memory needs of a model, the easiest method is to multiply the number of parameters by the number of bits in each parameter.
   - EXAMPLE: 70B parameter model @ 16 bit precision
     - 1B translates to `Giga`
     - 8 bits in 1 Byte
