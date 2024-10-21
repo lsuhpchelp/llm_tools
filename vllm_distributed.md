@@ -29,13 +29,10 @@ This guide will walk you through the process of setting up and using VLLM across
 
 ### 2. Install VLLM
 
-1. Check for the latest VLLM tag on [GitHub](https://github.com/vllm-project/vllm). For the purposes of this guide, we will use version 0.5.5.
-2. Install the nightly release of VLLM using the following commands:
-   ```bash
-   export VLLM_VERSION=0.5.5
-   pip install https://vllm-wheels.s3.us-west-2.amazonaws.com/nightly/vllm-${VLLM_VERSION}-cp38-abi3-manylinux1_x86_64.whl
-   ```
-   > Note: The nightly release is required due to an issue with the `outlines` library.
+Install VLLM with pip
+```bash
+pip install vllm
+```
 
 ### 3. Install Ray
 
