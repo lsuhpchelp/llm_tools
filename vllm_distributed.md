@@ -66,31 +66,7 @@ export MODEL_LOCATION=/work/$USER/models/meta-llama/Meta-Llama-3.1-405B-Instruct
 
 ### 6. Download the Scripts
 
-The necessary scripts are provided in the LSU HPC GitHub repository. Follow these steps to download them:
-
-1. If you don't have Git installed, install it:
-
-   ```bash
-   conda install git -y
-   ```
-
-2. Clone the repository:
-
-   ```bash
-   git clone https://github.com/lsuhpchelp/llm_tools.git
-   cd llm_tools
-   ```
-
-3. Navigate to the distributed scripts directory:
-
-   ```bash
-   cd distributed_scripts
-   ```
-
-4. Ensure you have the necessary permissions to execute these scripts:
-   ```bash
-   chmod +x start-head.sh start-worker.sh submit.sh
-   ```
+The necessary scripts are provided in the LSU HPC GitHub repository under `distributed_scripts`
 
 ### 7. Configure the Scripts
 
@@ -135,7 +111,7 @@ sbatch submit.sh
 
 ### 9. Monitor the Job
 
-You can monitor the status of loading the model by reviewing the output and error logs shows in step 8.
+You can monitor the status of loading the model by reviewing the output and error logs shown in step 8.
 
 ### 10. Connect to the Model
 
