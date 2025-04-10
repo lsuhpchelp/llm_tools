@@ -21,5 +21,5 @@ source /home/$USER/.bashrc
 conda activate vllm-inf
 
 echo "starting ray worker node"
-ray start --address $1 --block &
+ray start --address $1 --block --temp-dir=/tmp/ray/${USER}_cluster &
 sleep infinity

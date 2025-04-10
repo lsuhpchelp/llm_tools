@@ -16,7 +16,7 @@ conda activate vllm-inf
 
 echo "starting ray head node"
 # Launch the head node
-ray start --head --node-ip-address=$1 --port=6379 --block &
+ray start --head --temp-dir=/tmp/ray/${USER}_cluster --node-ip-address=$1 --port=6379 --block &
 sleep 20
-vllm serve $2 -tp 16&
+vllm serve $2 -tp 8&
 sleep infinity

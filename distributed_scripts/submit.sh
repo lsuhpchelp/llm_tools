@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #SBATCH --job-name=llm_inference
-#SBATCH --output=/work/**********CHANGEME***************/vllm/logs/llm_inference_%j.out
-#SBATCH --error=/work/***********CHANGEME****************/vllm/logs/llm_inference_%j.err
+#SBATCH --output=/work/killgore/vllm/logs/llm_inference_%j.out
+#SBATCH --error=/work/killgore/vllm/logs/llm_inference_%j.err
 #SBATCH -N 4
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:2
 #SBATCH --time=01:00:00
-#SBATCH -A ***********CHANGEME****************
-#SBATCH -p gpu4
+#SBATCH -A loni_loniadmin1
+#SBATCH -p gpu2
 
 
 # Set environment variables
@@ -20,7 +20,7 @@ export OUTLINES_CACHE_DIR=/work/$USER/qb4/inference/
 
 
 ############ Make sure to change this to the model you want to use ############
-export MODEL_LOCATION=/work/$USER/models/meta-llama/Meta-Llama-3.1-405B-Instruct
+export MODEL_LOCATION=/work/$USER/models/meta-llama/Meta-Llama-3.1-70B-Instruct
 #############################################################################
 
 module load cuda
